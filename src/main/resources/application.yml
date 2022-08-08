@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: k8sDemo
+---
+netty:
+  default:
+    allocator:
+      max-order: 3
+---
+endpoints:
+  all:
+    sensitive: false
+    enabled: true
+  health:
+    details-visible: anonymous
+  routers:
+    sensitive: false
+    enabled: true
